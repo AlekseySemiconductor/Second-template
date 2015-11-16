@@ -1,0 +1,1057 @@
+body {
+	overflow-x: hidden; /* Если подключаем какую-нибудь анимацию при скролле, то у body нужно ставить */
+}
+
+.container, [class*='col-'] {
+	padding: 0px;
+}
+
+.row {
+	margin: 0px;
+}
+
+/* font-family: "ArialNarrowRegular"; */
+@font-face {
+	font-family: "ArialNarrowRegular";
+	src: url("../fonts/ArialNarrowRegular/ArialNarrowRegular.eot");
+	src: url("../fonts/ArialNarrowRegular/ArialNarrowRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/ArialNarrowRegular/ArialNarrowRegular.woff") format("woff"),
+	url("../fonts/ArialNarrowRegular/ArialNarrowRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+/* font-family: "MyriadProRegular"; */
+@font-face {
+	font-family: "MyriadProRegular";
+	src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+	src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+	url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+/* font-family: "ArialRegular"; */
+@font-face {
+	font-family: "ArialRegular";
+	src: url("../fonts/ArialRegular/ArialRegular.eot");
+	src: url("../fonts/ArialRegular/ArialRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/ArialRegular/ArialRegular.woff") format("woff"),
+	url("../fonts/ArialRegular/ArialRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+/* font-family: "ArialItalic"; */
+@font-face {
+	font-family: "ArialItalic";
+	src: url("../fonts/ArialItalic/ArialItalic.eot");
+	src: url("../fonts/ArialItalic/ArialItalic.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/ArialItalic/ArialItalic.woff") format("woff"),
+	url("../fonts/ArialItalic/ArialItalic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+h1, h2, h3, button, label {
+	font-family: "MyriadProRegular";
+	color: #000;
+}
+
+p, a, li, input, textarea {
+	font-family: "ArialRegular";
+	color: #000;
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
+
+/* BEGIN HEADER */
+
+header {
+	background-color: #fff;
+	position: relative;
+	z-index: 1;
+}
+
+header .row {
+	padding: 60px 0px;
+}
+
+header img {
+	vertical-align: bottom; /* Чтобы не было отступа снизу */
+}
+
+header .row div:nth-child(2) {
+	text-align: left;
+}
+
+header .row div:nth-child(2) a {
+	padding-right: 30px;
+	opacity: .3;
+}
+
+header .row div:nth-child(2) a:last-child {
+	padding-right: 0px;
+}
+
+header div:first-child {
+	text-align: center;
+}
+
+header div:nth-child(3) {
+	text-align: right;
+}
+
+header img:hover {
+	opacity: .5;
+}
+
+/* END HEADER */
+
+
+/* BEGIN WRAPPER */
+
+/* BEGIN WORKS */
+
+.wrapper {
+	position: relative;
+	background: url(../images/bg_1.png);
+}
+
+.wrapper > img {
+	position: absolute;
+	width: 100%; /* Чтобы не вылезал за пределы */
+	top: -140px; /* Чтобы рисунок начинал двигаться от начала страницы */
+}
+
+.works {
+	padding: 65px 0px;
+}
+
+.works [class*='col-'] {
+	margin-bottom: 34px;
+}
+
+.works [class*='col-'] > div {
+	margin: 0 auto;
+}
+
+.works div .row > div > div {
+	height: 265px;
+	width: 265px;
+	overflow: hidden;
+	position: relative;
+	opacity: .75;
+}
+
+.works .info {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	border: 5px solid #f6f6f6;
+	z-index: 1;
+}
+
+.works .row > div > div > img {
+	position: absolute;
+}
+
+.works .row > div:first-child img {
+	right: -15px;
+	bottom: -5px;
+}
+
+.works .row > div:nth-child(2) img {
+	right: -266px;
+	bottom: -169px;
+}
+
+.works .row > div:nth-child(3) img {
+	right: -143px;
+	bottom: -43px;
+}
+
+.works .row > div:nth-child(4) img {
+	left: -9px;
+	top: -0px;
+}
+
+.works .row: > div:nth-child(5) img {
+	left: -117px;
+	top: -24px;
+}
+
+.works .row > div:nth-child(6) img {
+	left: -64px;
+	top: -5px;
+}
+
+.works .row > div:nth-child(7) img {
+	left: -152px;
+	top: -36px;
+}
+
+.works .row > div:last-child img {
+	left: -92px;
+	top: -10px;
+}
+
+.works .info_top {
+	background-color: #000;
+	opacity: 0.45; /* Делаем .info_top_descr отдельно, так как opacity влияет и на текст */
+}
+
+.works .info_top, .works .info_top_descr {
+	position: absolute;
+	top: -72px; /* Начальное положение скрытого блока 67px + 5px(border) */
+	height: 67px;
+	right: 0px;
+	width: 100%;
+	z-index: 1;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.works [class*='col-'] > div:hover .info_top, 
+.works [class*='col-'] > div:hover .info_top_descr {
+	top: 0px;
+}
+
+.works .info_top_descr div {
+	display: inline-block;
+	color: #fff;
+}
+
+.works .info_top_descr div p {
+	color: #fff;
+}
+
+.works .info_top_descr div:first-child {
+	padding: 19px 0px 0px 16px;
+}
+
+.works .info_top_descr div:last-child {
+	margin-left: 85px;
+}
+
+.works .info_top_descr div p:first-child {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.works .info_top_descr div p:last-child {
+	font-size: 13px;
+	line-height: 16px;
+}
+
+.works .info_top_descr div:last-child p:first-child {
+	text-transform: uppercase;
+}
+
+.works .info_down {
+	position: absolute;
+	top: 265px;
+	background-color: #fff;
+	width: 100%;
+	height: 71px;
+	z-index: 1;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.works [class*='col-'] > div:hover .info_down {
+	top: 194px; /* 265px - 71px */
+}
+
+.works .info_down div {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+.works .info_down p {
+	position: absolute;
+	display: inline-block;
+	color: #9f9d9b;
+	font-weight: bold;
+	font-size: 13px;
+	top: 29px;
+}
+
+.works .info_down .like_icon {
+	left: 15px;
+}
+
+.works .info_down .like {
+	left: 39px;
+	line-height: 11px; /* Выравниваем по одной линии с иконкой */
+}
+
+.works .info_down .comment_icon {
+	left: 72px;
+}
+
+.works .info_down .comment {
+	left: 99px;
+	line-height: 11px;
+}
+
+.works .info_down .full_img {
+	right: 15px;
+}
+
+.works .info_down .full_img a:hover {
+	opacity: .7;
+}
+
+/* END WORKS */
+
+
+/* BEGIN ABOUT */
+
+.about {
+	padding-bottom: 65px;
+}
+
+.about > div {
+	position: relative;
+	z-index: 1;
+	background-color: #fff;
+}
+
+.about .row div {
+	text-align: center;
+}
+
+.about h1 {
+	font-size: 28px;
+	-moz-transform: scaleX(.8); /* Для Firefox */
+	-ms-transform: scaleX(.8); /* Для IE */
+	-webkit-transform: scaleX(.8); /* Для Safari, Chrome, iOS */
+	-o-transform: scaleX(.8); /* Для Opera */
+	transform: scaleX(.8);
+	padding: 70px 0px 30px;
+}
+
+.about p {
+	margin: 0px auto;
+	width: 45%;
+	font-size: 18px;
+	line-height: 30px;
+	font-family: "ArialNarrowRegular";
+}
+
+.about button {
+	margin: 47px 0px 74px;
+	height: 45px;
+	background-color: #202020;
+	color: #fff;
+	border: none;
+	font-size: 18px;
+	text-transform: uppercase;
+	padding: 0px 30px;
+	-moz-transform: scaleX(.8); /* Для Firefox */
+	-ms-transform: scaleX(.8); /* Для IE */
+	-webkit-transform: scaleX(.8); /* Для Safari, Chrome, iOS */
+	-o-transform: scaleX(.8); /* Для Opera */
+	transform: scaleX(.8);
+}
+
+/* END ABOUT */
+
+
+/* BEGIN BLOG */
+
+/* BEGIN POST */
+
+.blog > div > .row > [class*='-']:nth-child(-n+3) > div {
+	position: relative;
+	z-index: 1;
+	background-color: #fff; /* Для первых трех блоков сделаем так, а для четвертого немного по-другому */
+}
+
+.blog .post {
+	padding: 50px 0px 0px 30px;
+	margin-bottom: 30px;
+}
+
+.blog .post > div:first-child p {
+	font-size: 14px;
+	color: #989b9f;
+	display: inline-block;
+}
+
+.blog .post > div:first-child .read_ago {
+	float: right;
+}
+
+.blog .post h2 {
+	font-size: 28px;
+	padding: 20px 0px 22px;
+	-moz-transform: scaleX(.8); /* Для Firefox */
+	-ms-transform: scaleX(.8); /* Для IE */
+	-webkit-transform: scaleX(.8); /* Для Safari, Chrome, iOS */
+	-o-transform: scaleX(.8); /* Для Opera */
+	transform: scaleX(.8);
+	-webkit-transform-origin: left 50%;
+	-moz-transform-origin: left 50%;
+	-o-transform-origin: left 50%;
+	-ms-transform-origin: left 50%;
+	transform-origin: left 50%;
+}
+
+.blog .post .post_img {
+	width: 233px;
+	height: 231px;
+	border: 4px solid #f0f0f0;
+	position: relative;
+	overflow: hidden;
+	float: left;
+}
+
+.blog .post .post_name_img {
+	padding: 245px 0px 0px 7px;
+	font-size: 12px;
+	color: #6c6e72;
+}
+
+.blog .post > div > div:first-child a {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.blog .post > div > div:first-child .flight {
+	position: absolute;
+	right: -44px;
+	top: -1px;
+}
+
+.blog .post > div > div:first-child .manhatten {
+	position: absolute;
+	right: -76px;
+	top: -6px;
+}
+
+.blog .post > div > div:nth-child(2) {
+	margin-left: -15px;
+	margin-right: 15px;
+	padding-right: 30px;
+}
+
+.blog .post_comment_1 {
+	font-family: "ArialNarrowRegular";
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.blog .post_comment_2 {
+	padding-top: 20px;
+	font-size: 14px;
+	line-height: 24px;
+	color: #636060;
+}
+
+.blog .author {
+	height: 456px;
+	margin-top: -136px;
+	padding-top: 84px;
+	text-align: center;
+}
+
+.blog .author > div {
+	height: 100%;
+	width: 100%;
+}
+
+.blog .author h3 {
+	font-size: 20px;
+	-moz-transform: scaleX(.8); /* Для Firefox */
+	-ms-transform: scaleX(.8); /* Для IE */
+	-webkit-transform: scaleX(.8); /* Для Safari, Chrome, iOS */
+	-o-transform: scaleX(.8); /* Для Opera */
+	transform: scaleX(.8);
+}
+
+.blog .author p {
+	font-size: 12px;
+	line-height: 18px;
+	color: #e6618c;
+}
+
+.blog div .author .user_img {
+	padding: 16px 0px 39px;
+	position: relative;
+}
+
+.blog div .author .author_icons a {
+	opacity: .3;
+}
+
+.blog div .author .user_img .hidden_social {
+	display: none;
+}
+
+.blog .row .user_img ul {
+	position: absolute;
+	top: 28px;
+	right: -36px;
+	width: 72px;
+	background: #8c8c8c;
+	display: block;
+}
+
+/* Делаем уголок у всплывающего радом с фотографией автора списка иконок социальных сетей */
+.blog .row .user_img ul::after {
+	position: absolute;
+	left: -16px;
+	bottom: 6px;
+	border-color: #8c8c8c transparent;
+	border-style: solid;
+	border-width: 0 11px 10px 11px;
+	content: "";
+	-webkit-transform: rotate(270deg);
+	-moz-transform: rotate(270deg);
+	-ms-transform: rotate(270deg);
+	-o-transform: rotate(270deg);
+	transform: rotate(270deg);
+}
+
+.blog .row .user_img li {
+	display: inline-block;
+}
+
+.blog .row .user_img li:first-child {
+	padding: 3px 5px 3px 10px;
+}
+
+.blog .row .user_img li:last-child {
+	padding: 3px 6px 3px 5px;
+}
+
+.blog div .author .author_icons {
+	padding-bottom: 17px;
+}
+
+.blog div .author .author_icons:last-child {
+	padding-bottom: 0px;
+}
+
+/* Каждый второй будет иметь отступ снизу - 30px. А также делаем отступ и у .categorys */
+.blog article > div:nth-child(2n),
+.blog .categorys > div {
+	margin-bottom: 30px;
+}
+
+/* Когда .blog закончится у последнего div будет отступ побольше - как на макете */
+.blog article > div:last-child,
+.blog .categorys > div:last-child {
+	margin-bottom: 55px;
+}
+
+/* END POST */
+
+/* BEGIN CATEGORYS */
+
+.blog .categorys div {
+	float: right;
+	width: 265px;
+}
+
+.blog .categorys h3 {
+	font-size: 20px;
+	-moz-transform: scale(0.8, 1.3); /* Для Firefox */
+	-ms-transform: scale(0.8, 1.3); /* Для IE */
+	-webkit-transform: scale(0.8, 1.3); /* Для Safari, Chrome, iOS */
+	-o-transform: scale(0.8, 1.3); /* Для Opera */
+	transform: scale(0.8, 1.3);
+	text-align: center;
+	padding: 46px 0px 38px;
+}
+
+.blog .categorys div > ul {
+	padding: 0px 25px 65px 50px;
+	font-size: 13px;
+}
+
+.blog .categorys div > ul > li {
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.blog .categorys div > ul > li:last-child {
+	padding-bottom: 0px;
+}
+
+.blog .categorys div > ul > li > span > span {
+	text-decoration: underline;
+	color: #e6618c;
+}
+
+.blog .categorys div > ul > li > span::after {
+	position: absolute;
+	left: -16px;
+	top: -3px;
+	border-color: #c2c2c2 transparent;
+	border-style: solid;
+	border-width: 0 6px 6px;
+	content: "";
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+	-webkit-transform-origin: left 50%;
+	-moz-transform-origin: left 50%;
+	-o-transform-origin: left 50%;
+	-ms-transform-origin: left 50%;
+	transform-origin: left 50%;
+}
+
+/* Создаем переключатель для выпадающего меню в .categorys */
+.blog .categorys div > ul > li > span.changed::after {
+	position: absolute;
+	left: -12px;
+	top: 3px;
+	border-color: #000 transparent;
+	border-style: solid;
+	border-width: 0 6px 6px;
+	content: "";
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+	-webkit-transform-origin: left 50%;
+	-moz-transform-origin: left 50%;
+	-o-transform-origin: left 50%;
+	-ms-transform-origin: left 50%;
+	transform-origin: left 50%;
+}
+
+/* Скрываем выпадающее меню и подменю */
+.blog .categorys div > ul > li > ul,
+.blog .categorys div > ul > li > ul > li > ul {
+	display: none;
+}
+
+.blog .categorys div > ul > li > ul > li {
+	position: relative;
+	padding-top: 15px;
+	color: #e6618c;
+	font-family: "ArialItalic";
+}
+
+.blog .categorys div > ul > li > ul > li span {
+	text-decoration: underline;
+}
+
+.blog .categorys div > ul > li > ul > li > span::after {
+	position: absolute;
+	left: -10px;
+	top: 12px;
+	border-color: #c2c2c2 transparent;
+	border-style: solid;
+	border-width: 0 6px 6px;
+	content: "";
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+	-webkit-transform-origin: left 50%;
+	-moz-transform-origin: left 50%;
+	-o-transform-origin: left 50%;
+	-ms-transform-origin: left 50%;
+	transform-origin: left 50%;
+}
+
+.blog .categorys div > ul > li > ul > li > span.changed::after {
+	position: absolute;
+	left: -4px;
+	top: 20px;
+	border-color: #000 transparent;
+	border-style: solid;
+	border-width: 0 6px 6px;
+	content: "";
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+	-webkit-transform-origin: left 50%;
+	-moz-transform-origin: left 50%;
+	-o-transform-origin: left 50%;
+	-ms-transform-origin: left 50%;
+	transform-origin: left 50%;
+}
+
+.blog .categorys div > ul > li > span,
+.blog .categorys div > ul > li > ul > li span {
+	cursor: pointer;
+}
+
+.blog .categorys div:first-child > ul > li > span > span:hover,
+.blog .categorys div:first-child > ul > li > ul > li span:hover {
+	opacity: .5;
+}
+
+.blog .categorys div > ul > li > ul > li > ul > li {
+	padding-top: 10px;
+}
+
+.blog .categorys .archive > ul > li > ul > li {
+	color: #000;
+	font-family: "ArialRegular";
+}
+
+.blog .categorys .archive > ul > li > ul > li span {
+	text-decoration: none;
+}
+
+.blog .categorys .archive > ul > li > ul > li > span > span {
+	text-decoration: underline;
+	color: #e6618c;
+}
+
+.blog .categorys .archive > ul > li > ul > li > ul > li {
+	text-decoration: underline;
+	color: #e6618c;
+	font-family: "ArialItalic";
+}
+
+/* END CATEGORYS */
+
+/* BEGIN CONTACT */
+
+.blog .contact div {
+	margin-right: 20px;
+	padding: 50px 30px;
+}
+
+.blog .contact h2 {
+	font-size: 28px;
+	-moz-transform: scaleX(.7); /* Для Firefox */
+	-ms-transform: scaleX(.7); /* Для IE */
+	-webkit-transform: scaleX(.7); /* Для Safari, Chrome, iOS */
+	-o-transform: scaleX(.7); /* Для Opera */
+	transform: scaleX(.7);
+	-webkit-transform-origin: left 50%;
+	-moz-transform-origin: left 50%;
+	-o-transform-origin: left 50%;
+	-ms-transform-origin: left 50%;
+	transform-origin: left 50%;
+}
+
+.blog .contact p:nth-child(2) {
+	font-size: 14px;
+	color: #636060;
+	line-height: 24px;
+	padding: 15px 0px 20px;
+}
+
+.blog .contact input,
+.blog .contact textarea {
+	font-family: "ArialItalic";
+	font-size: 14px;
+	padding-left: 30px;
+	color: #c0c0c0;
+	background-color: #f2f2f2;
+	border: 1px #d6d6d6 solid;
+}
+
+/* Цвет placeholder для разных браузеров */
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+	color: #c0c0c0;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color: #c0c0c0;
+	opacity: 1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color: #c0c0c0;
+	opacity: 1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: #c0c0c0;
+}
+
+/* Хром при наборе в форме (при автозаполнении) ставит свой background-color и color - исправляем это */
+input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0px 1000px #f2f2f2 inset;
+	-webkit-text-fill-color: #c0c0c0 !important;
+}
+
+.blog .contact .name,
+.blog .contact .email {
+	width: 50%;
+	height: 47px;
+}
+
+.wrong_name,
+.wrong_email {
+	font-family: "ArialItalic";
+	font-size: 14px;
+	display: inline-block;
+	padding-left: 30px;
+}
+
+.wrong_name {
+	color: #c0c0c0;
+}
+
+.wrong_email,
+.wrongEmailSubscribe {
+	color: #f2ba59;
+}
+
+.blog .contact .email {
+	margin: 20px 0px 20px;
+}
+
+.blog .contact .message {
+	width: 100%;
+	height: 245px;
+	resize: none;
+	padding-top: 20px;
+}
+
+.blog .contact .send {
+	margin-top: 22px;
+	height: 45px;
+	background-color: #202020;
+	color: #fff;
+	font-size: 18px;
+	padding: 0px 103px;
+	text-transform: uppercase;
+	border: none;
+	font-family: "ArialRegular";
+	-moz-transform: scaleX(.6); /* Для Firefox */
+	-ms-transform: scaleX(.6); /* Для IE */
+	-webkit-transform: scaleX(.6); /* Для Safari, Chrome, iOS */
+	-o-transform: scaleX(.6); /* Для Opera */
+	transform: scaleX(.6);
+	-webkit-transform-origin: left 50%;
+	-moz-transform-origin: left 50%;
+	-o-transform-origin: left 50%;
+	-ms-transform-origin: left 50%;
+	transform-origin: left 50%;
+}
+
+/* END CONTACT */
+
+/* BEGIN BACK */
+
+.blog .back > .row > div:first-child > div {
+	margin: 0px 0px 30px 15px;
+}
+
+.blog .back > .row > div:nth-child(2) > div {
+	margin: 0px 0px 30px 25px;
+}
+
+.blog .back .random_post > div {
+	background-color: #fff;
+	padding: 45px 30px;
+}
+
+.blog .back .row > div:first-child h2 {
+	padding-left: 6px;
+	font-size: 28px;
+	-moz-transform: scaleX(.75); /* Для Firefox */
+	-ms-transform: scaleX(.75); /* Для IE */
+	-webkit-transform: scaleX(.75); /* Для Safari, Chrome, iOS */
+	-o-transform: scaleX(.75); /* Для Opera */
+	transform: scaleX(.75);
+	-webkit-transform-origin: left 50%;
+	-moz-transform-origin: left 50%;
+	-o-transform-origin: left 50%;
+	-ms-transform-origin: left 50%;
+	transform-origin: left 50%;
+}
+
+.blog .back .row > div:nth-child(2) h2 {
+	padding-left: 1px;
+	font-size: 28px;
+	-moz-transform: scaleX(.75); /* Для Firefox */
+	-ms-transform: scaleX(.75); /* Для IE */
+	-webkit-transform: scaleX(.75); /* Для Safari, Chrome, iOS */
+	-o-transform: scaleX(.75); /* Для Opera */
+	transform: scaleX(.75);
+	-webkit-transform-origin: left 50%;
+	-moz-transform-origin: left 50%;
+	-o-transform-origin: left 50%;
+	-ms-transform-origin: left 50%;
+	transform-origin: left 50%;
+}
+
+.blog .back .random_post div div {
+	position: relative;
+	height: 180px;
+	width: 205px;
+	overflow: hidden;
+	margin: 15px auto;
+	border: 5px solid #f0f0f0;
+}
+
+.blog .back .random_post div div img {
+	position: absolute;
+}
+
+.blog .back .row > div:first-child img {
+	bottom: -85px;
+	left: -212px;
+}
+
+.blog .back .row > div:nth-child(2) img {
+	bottom: -40px;
+	left: -77px;
+}
+
+.blog .back .row > div:first-child p {
+	padding-left: 6px;
+	font-size: 15px; /* На макете 20px, но шрифт в 20px не вмещается на 1 строку */
+	-moz-transform: scaleY(1.5); /* Для Firefox */
+	-ms-transform: scaleY(1.5); /* Для IE */
+	-webkit-transform: scaleY(1.5); /* Для Safari, Chrome, iOS */
+	-o-transform: scaleY(1.5); /* Для Opera */
+	transform: scaleY(1.5);
+	-webkit-transform-origin: left 50%;
+	-moz-transform-origin: left 50%;
+	-o-transform-origin: left 50%;
+	-ms-transform-origin: left 50%;
+	transform-origin: left 50%;
+}
+
+.blog .back .row > div:nth-child(2) p {
+	padding-left: 1px;
+	font-size: 15px;
+	-moz-transform: scaleY(1.5); /* Для Firefox */
+	-ms-transform: scaleY(1.5); /* Для IE */
+	-webkit-transform: scaleY(1.5); /* Для Safari, Chrome, iOS */
+	-o-transform: scaleY(1.5); /* Для Opera */
+	transform: scaleY(1.5);
+	-webkit-transform-origin: left 50%;
+	-moz-transform-origin: left 50%;
+	-o-transform-origin: left 50%;
+	-ms-transform-origin: left 50%;
+	transform-origin: left 50%;
+}
+
+.blog .back .subscribe > div {
+	background-color: #fff;
+	margin: 0px 0px 75px 15px;
+	padding: 50px 0px;
+	text-align: center;
+}
+
+.blog .back .subscribe form {
+	padding-top: 5px;
+}
+
+.blog .back .subscribe label {
+	font-size: 28px;
+	line-height: 30px;
+	color: #000;
+	display: inline-block; /* Для того, чтобы transform работало */
+	-moz-transform: scaleX(.75); /* Для Firefox */
+	-ms-transform: scaleX(.75); /* Для IE */
+	-webkit-transform: scaleX(.75); /* Для Safari, Chrome, iOS */
+	-o-transform: scaleX(.75); /* Для Opera */
+	transform: scaleX(.75);
+}
+
+.blog .back .subscribe .emailSubscribe {
+	display: block;
+	margin: 30px auto 0px;
+	text-align: center;
+	font-family: "ArialItalic";
+	font-size: 14px;
+	color: #c0c0c0;
+	background-color: #f2f2f2;
+	border: 1px #d6d6d6 solid;
+	height: 47px;
+	width: 70%; /* 387px ~ 70% */
+}
+
+.blog .back .subscribe .subscribeButton {
+	height: 45px;
+	background-color: #202020;
+	color: #fff;
+	border: none;
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-top: 20px;
+	padding: 0px 109px;
+	-moz-transform: scaleX(.6); /* Для Firefox */
+	-ms-transform: scaleX(.6); /* Для IE */
+	-webkit-transform: scaleX(.6); /* Для Safari, Chrome, iOS */
+	-o-transform: scaleX(.6); /* Для Opera */
+	transform: scaleX(.6);
+}
+
+.wrongEmailSubscribe {
+	display: none;
+	padding-top: 20px;
+	font-family: "ArialItalic";
+	font-size: 14px;
+}
+
+/* END BACK */
+
+/* END BLOG */
+
+/* END WRAPPER */
+
+
+/* BEGIN FOOTER */
+
+footer {
+	background-color: #202020;
+	position: relative;
+	z-index: 1;
+}
+
+footer .row {
+	padding: 60px 0px;
+}
+
+footer img {
+	vertical-align: bottom; /* Чтобы не было отступа снизу */
+}
+
+footer .row div:nth-child(2) {
+	text-align: left;
+}
+
+footer .row div:nth-child(2) a {
+	padding-right: 30px;
+}
+
+footer .row div:nth-child(2) a:last-child {
+	padding-right: 0px;
+}
+
+footer div:first-child {
+	text-align: center;
+}
+
+footer div:nth-child(3) {
+	text-align: right;
+}
+
+footer img:hover {
+	opacity: .5;
+}
+
+/* END FOOTER */

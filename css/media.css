@@ -1,0 +1,441 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	
+	.blog div .categorys > div {
+		margin-bottom: 55px;
+	}
+
+	.blog div .categorys {
+		text-align: center; /* Чтобы блоки выравнивались по центру */
+	}
+
+	.blog div .categorys div {
+		float: none; /* Чтобы блоки не выравнивались по правому краю */
+		display: inline-block; /* Чтобы блоки встали рядом, а не друг под другом */
+		text-align: left; /* Чтобы текст не выравнивался по центру */
+		vertical-align: top; /* При нажатии на span соседний div опускается на величину, равную высоте выпадающего списка */
+		margin: 0px 50px 55px;
+	}
+
+	.blog div .contact div {
+		margin: 0px 0px 35px;
+	}
+
+	.blog div .back > .row > div:first-child > div {
+		margin: 0px 20px 30px 0px;
+	}
+
+	.blog div .back > .row > div:nth-child(2) > div {
+		margin: 0px 0px 30px 20px;
+	}
+	
+	.blog div .back .row > div:first-child h2,
+	.blog div .back .row > div:first-child p,
+	.blog div .back .row > div:nth-child(2) h2,
+	.blog div .back .row > div:nth-child(2) p {
+		padding: 0px;
+	}
+
+	.blog div .back .random_post > div h2,
+	.blog div .back .random_post > div p {
+		text-align: center;
+	}
+	
+	.blog div .back .subscribe > div {
+		margin-left: 0px;
+	}
+
+}
+
+@media only screen and (max-width : 1200px) {
+
+	
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	
+	header div .row div:nth-child(2) a {
+		padding-right: 15px;
+	}
+
+	.about div h1 {
+		font-size: 36px;
+	}
+
+	.about div p {
+		margin: 0px auto;
+		width: 65%;
+		font-size: 22px;
+		line-height: 30px;
+	}
+
+	.blog .post .author {
+		height: 100px;
+		margin-top: 0px;
+		padding-top: 0px;
+		text-align: center;
+		display: inline-block;
+	}
+
+	.blog .author > div {
+		margin-left: -30px;
+		padding-left: 30px;
+		text-align: left;
+	}
+
+	.blog .post .author > div > h3,
+	.blog .post .author > div > p,
+	.blog .post .author > div > div {
+		display: inline-block;
+		text-align: left;
+		position: absolute;
+	}
+
+	.blog .post .author > div > h3 {
+		left: 275px;
+		top: 15px;
+	}
+
+	.blog .post .author > div > p {
+		left: 273px;
+		top: 40px;
+	}
+
+	.blog .post .author > div > .user_img {
+		position: absolute;
+		padding: 0px;
+		left: 410px;
+		top: 26px;
+	}
+
+	.blog div .row .user_img ul {
+		position: absolute; /* для ie9 */
+		right: -86px;
+		top: 12px;
+	}
+
+	.blog div div .author .author_icons {
+		padding: 0px;
+	}
+
+	.blog div div .author > div > div:nth-child(n+4) {
+		top: 65px;
+	}
+
+	.blog div div .author > div > div:nth-child(4) {
+		left: 245px;
+	}
+
+	.blog div div .author > div > div:nth-child(5) {
+		left: 280px;
+	}
+
+	.blog div div .author > div > div:nth-child(6) {
+		left: 310px;
+	}
+
+	.blog div div .author > div > div:last-child {
+		left: 345px;
+	}
+
+	footer div .row div:nth-child(2) a {
+		padding-right: 15px;
+	}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	header div .row div:nth-child(2), 
+	header div .row div:last-child {
+		margin-top: 40px;
+	}
+
+	body .wrapper > img {
+		top: 180px; /* Чтобы рисунок начинал двигаться от начала страницы */
+	}
+	
+	header div .row div:nth-child(2) {
+		text-align: center;
+	}
+
+	header .row div:nth-child(3) {
+		text-align: center;
+	}
+
+	.about div h1 {
+		font-size: 40px;
+	}
+
+	.about div p {
+		margin: 0px auto;
+		width: 75%;
+		font-size: 24px;
+		line-height: 30px;
+	}
+
+	.blog div .post {
+		padding: 50px 0 0 0px;
+	}
+
+	.blog .post > div,
+	.blog div .post h2 {
+		text-align: center;
+		-webkit-transform-origin: 50% 50%;
+		-moz-transform-origin: 50% 50%;
+		-o-transform-origin: 50% 50%;
+		-ms-transform-origin: 50% 50%;
+		transform-origin: 50% 50%;
+	}
+
+	.blog div .post > div:first-child p {
+		font-size: 20px;
+	}
+
+	.blog div .post > div > div:nth-child(2) {
+		margin: 0px; /* Убираем все отступы */
+		padding: 0px;
+	}
+
+	.blog div .post h2 {
+		font-size: 30px;
+	}
+
+	.blog div .post .post_img {
+		float: none;
+		margin: 0 auto;
+	}
+
+	.blog div .post .post_name_img {
+		font-size: 25px;
+		padding: 10px 0px 20px;
+	}
+
+	.blog div .post_comment_1,
+	.blog div .post_comment_2 {
+		font-size: 20px;
+		line-height: 24px;
+	}
+
+	.blog .post > div > div:nth-child(2) {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.blog div .categorys div {
+		margin: 30px 0px 55px;
+	}
+
+	.blog div .contact .name,
+	.blog div .contact .email {
+		width: 100%;
+	}
+
+	div .wrong_name {
+		padding: 20px 0px 0px 30px;
+	}
+
+	div .wrong_email {
+		padding: 0px 0px 20px 30px;
+	}
+
+	.blog div div .back > .row > div:first-child > div {
+		margin: 0px 0px 30px;
+	}
+
+	.blog div div .back > .row > div:nth-child(2) > div {
+		margin: 0px 0px 30px;
+	}
+
+	.blog div .back .row > div:first-child h2,
+	.blog div .back .row > div:nth-child(2) h2 {
+		-webkit-transform-origin: 50% 50%;
+		-moz-transform-origin: 50% 50%;
+		-o-transform-origin: 50% 50%;
+		-ms-transform-origin: 50% 50%;
+		transform-origin: 50% 50%;
+	}
+
+	footer div .row div:nth-child(2), 
+	footer div .row div:last-child {
+		margin-top: 40px;
+	}
+
+	footer div .row div:nth-child(2) {
+		text-align: center;
+	}
+
+	footer .row div:nth-child(3) {
+		text-align: center;
+	}
+
+}
+
+/* При меньших значениях этой ширины блоки в .works не помещаются в экран */
+@media only screen and (max-width : 600px) {
+
+	header .row div:nth-child(3) {
+		text-align: right;
+		padding-right: 50px;
+	}
+
+	.works [class*='col-'] {
+		width: 100%;
+	}
+
+	.works div [class*='col-']:last-child {
+		margin-bottom: 0px;
+	}
+
+	.blog .post .author > div > h3 {
+		left: 75px;
+		top: 15px;
+	}
+
+	.blog .post .author > div > p {
+		left: 73px;
+		top: 40px;
+	}
+
+	.blog .post .author > div > .user_img {
+		padding: 0px;
+		left: 210px;
+		top: 26px;
+	}
+
+	.blog div .row .user_img ul {
+		right: -86px;
+		top: 12px;
+	}
+
+	.blog div div .author .author_icons {
+		padding: 0px;
+	}
+
+	.blog div div .author > div > div:nth-child(n+4) {
+		top: 65px;
+	}
+
+	.blog div div .author > div > div:nth-child(4) {
+		left: 45px;
+	}
+
+	.blog div div .author > div > div:nth-child(5) {
+		left: 80px;
+	}
+
+	.blog div div .author > div > div:nth-child(6) {
+		left: 110px;
+	}
+
+	.blog div div .author > div > div:last-child {
+		left: 145px;
+	}
+
+	.blog div .categorys div {
+		margin: 0px 0px 55px;
+	}
+
+	footer .row div:nth-child(3) {
+		text-align: right;
+		padding-right: 50px;
+	}
+
+}
+
+/* При меньше этой ширины иконки в header опускаются вниз */
+@media only screen and (max-width : 500px) {
+
+	header div .row div:nth-child(2) a {
+		padding-right: 15px;
+	}
+
+	footer div .row div:nth-child(2) a {
+		padding-right: 15px;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+	header div .row div:nth-child(2) {
+		text-align: right;	
+	}
+
+	header div .row div:nth-child(2) a {
+		padding-right: 5px;
+	}
+
+	.blog .post .author > div > .user_img {
+		left: 180px;
+	}
+
+	.blog div .post > div:first-child .read_ago {
+		float: none;
+	}
+
+	footer div .row div:nth-child(2) {
+		text-align: right;	
+	}
+
+	footer div .row div:nth-child(2) a {
+		padding-right: 5px;
+	}
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Убираем отступ у поледних двух блоков с картинкой в .works */
+@media only screen and (min-width : 600px) {
+
+	.wrapper div [class*='col-']:nth-child(n+7){
+		margin-bottom: 0px;
+	}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) and (max-width : 1200px) {
+
+	.wrapper [class*='col-']:nth-child(n+7) {
+		width: 50%;
+	}
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+	.wrapper div [class*='col-']:nth-child(n+5) {
+		margin-bottom: 0px;
+	}
+
+}

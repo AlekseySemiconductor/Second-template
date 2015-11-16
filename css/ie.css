@@ -1,0 +1,29 @@
+.blog .row .user_img ul::after {
+	left: -15.5px;
+}
+
+@media only screen and (max-width : 1200px) {
+
+	.blog .row .user_img ul::after {
+		left: -16.2px;
+	}
+
+}
+
+@media only screen and (max-width : 992px) {
+
+	.blog .row .user_img ul::after {
+		position: absolute;
+		left: -15.5px;
+	}
+
+}
+
+@media only screen and (max-width : 768px) {
+
+	.blog .row .user_img ul::after {
+		position: absolute;
+		left: -16px;
+	}
+
+}
